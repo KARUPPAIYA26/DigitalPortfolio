@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KARUPPAIYA A - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0cdbff;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative; /* Add this */
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+        }
+
+        /* Add styles for the round profile picture */
+        .profile-picture {
+            width: 100px; /* Adjust the size as needed */
+            height: 100px;
+            border-radius: 75%; /* Create a circular shape */
+            object-fit: cover; /* To ensure the image fills the circular area */
+            position: absolute; /* Add this */
+            top: 75px; /* Adjust top position as needed */
+            left: 75px; /* Adjust left position as needed */
+        }
+
+        .nav {
+            height: 20px; 
+            text-align: center;
+            }
+            .nav ul{
+                list-style-type: none;
+                padding: 0;
+            }
+            .nav ul li{
+                display: inline;
+                margin: 0 20px;
+                font-family:raleway;
+                font-size:20px;
+            }
+
+            .nav li:hover {
+            background: white;
+            transition: background .3s;
+            
+            }
+            .nav-link {
+            color: #000000;
+            text-decoration: none;
+            }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .section-content {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+        .btn-slide1{
+            position: relative;
+            display: inline-block;
+            height: 50px;
+            width: 200px;
+            line-height: 50px;
+            padding: 0;
+            border-radius: 50px;
+            background: #fdfdfd;
+            border: 2px solid #005d7c;
+            margin: 10px;
+            transition: .5s;
+        }
+        .btn-slide1 span.title1,
+        .btn-slide1 span.title-hover1 {
+            position: absolute;
+            left: 25px;
+            text-align: center;
+            margin: 0 auto;
+            font-size: 16px;
+            font-weight: bold;
+            color: #30abd5;     
+        }
+         .btn-slide3{
+            position: relative;
+            display: inline-block;
+            height: 50px;
+            width: 100px;
+            line-height: 50px;
+            padding: 0;
+            border-radius: 50px;
+            background: #fdfdfd;
+            border: 2px solid #005d7c;
+            margin: 10px;
+            transition: .5s;
+        }
+        .btn-slide3 span.title3,
+        .btn-slide3 span.title-hover3 {
+            position: absolute;
+            left: 25px;
+            text-align: center;
+            margin: 0 auto;
+            font-size: 16px;
+            font-weight: bold;
+            color: #30abd5;     
+        }
+        .Download
+        {
+            margin: 20px auto;
+            text-align: center;
+        }
+        .btn-slide2 {
+            position: relative;
+            display: inline-block;
+            height: 50px;
+            width: 200px;
+            line-height: 50px;
+            padding: 0;
+            border-radius: 50px;
+            background: #fdfdfd;
+            border: 2px solid #0099cc;
+            margin: 10px;
+            transition: .5s;
+        }
+
+        .btn-slide2 {
+            border: 2px solid #efa666;
+        }
+        .btn-slide2:hover {
+            background-color: #efa666;
+        }
+        .btn-slide2:hover span.circle2 {
+            left: 100%;
+            margin-left: -45px;
+            background-color: #fdfdfd;
+            color: #0099cc;
+        }
+        .btn-slide2:hover span.circle2 {
+            color: #efa666;
+        }
+        .btn-slide2:hover span.title2 {
+            left: 40px;
+            opacity: 0;
+        }
+        .btn-slide2:hover span.title-hover2 {
+            opacity: 1;
+            left: 40px;
+        }
+  
+        .btn-slide2 span.circle2 {
+            background-color: #efa666;
+        }
+        .btn-slide2 span.title2,
+        .btn-slide2 span.title-hover2 {
+            position: absolute;
+            left: 90px;
+            text-align: center;
+            margin: 0 auto;
+            font-size: 16px;
+            font-weight: bold;
+            color: #30abd5;
+            transition: .5s;
+        }
+
+        .btn-slide2 span.title2,
+        .btn-slide2 span.title-hover2 {
+            color: #efa666;
+            left: 50px;
+        }
+        .btn-slide2 span.title-hover2 {
+            left: 50px;
+            opacity: 0;
+        }
+        .btn-slide2 span.title-hover2 {
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Add your profile picture here -->
+            <img src="/karuppaiya.jpg" alt="Your Profile Picture" class="profile-picture">
+            <h1>KARUPPAIYA A</h1>
+            <p>Student</p>
+        </div>
+    </header>
+    
+    <div class="nav">
+        <ul>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#resume" class="nav-link">Resume</a></li>
+        </ul>
+    </div>
+
+    <section id="about">
+        <div class="section-content">
+           <h2>About Me</h2>
+            <p>I'm a Student and leaner  </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p>Bharathidasan University  - B.SC ( COMPUTER SCIENCE )</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <a class="btn-slide3">
+                    <span class="circle3"></span>
+                    <span class="title3">HTML</span>
+                </a>
+                <a class="btn-slide3">
+                    <span class="circle3"></span>
+                    <span class="title3">CSS</span>
+                </a>
+                <a class="btn-slide3">
+                    <span class="circle3"></span>
+                    <span class="title3">Python</span>
+                </a>
+                <a class="btn-slide1">
+                    <span class="circle1"></span>
+                    <span class="title1">Internet of Things</span>
+                </a>
+                <a class="btn-slide3">
+                    <span class="circle3"></span>
+                    <span class="title3">C++</span>
+                </a>
+                <a class="btn-slide3">
+                    <span class="circle3"></span>
+                    <span class="title3">JAVA</span>
+                </a>
+                
+            </ul>
+            
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+           
+                <h2>Projects</h2>
+            <ul>
+                <a href="/project_Calculator.html" class="btn-slide1">
+                    <span class="circle1"></span>
+                    <span class="title1">Calculator</span>
+                </a>
+                <a href="#" class="btn-slide1">
+                    <span class="circle1"></span>
+                    <span class="title1">Cloud security IBM</span>
+                </a>
+                <!-- Add more project links here -->
+            </ul>
+        
+        </div>
+    </section>
+
+    <section id="resume">    
+        <div class="section-content">
+        <center>
+            <h2>Resume</h2>
+            <a href="/resume.docx" class="btn-slide2">
+                <span class="circle2"></span>
+                <span class="title2">Download CV</span>
+                <span class="title-hover2">Click here</span>
+            </a>
+        </center>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 KARUPPAIYA . A</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
